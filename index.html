@@ -215,7 +215,7 @@ input{
 .pointer {cursor: pointer;}
 </style>
 <head>
-	<title>PS4MACEDO 7.55 (Novo JB e Junto com o WK)</title>
+	<title>PS4MACEDO 7.55 (Novo JB e junto com o WebKit)</title>
 </head>
 	<body onload="go()" class="bg">
 		<script>
@@ -314,7 +314,7 @@ input{
 			setTimeout(function()
 			{	
 				eval.call(window, scriptCode);
-				done();
+				if(main_ret == 0 || main_ret == 179) {done();}else{alert("Jailbreak FALHOU! Reinicie o PS4 sem sair dessa tela, usando o botão \"PS\" \n e tente novamente.");}
 			}, 100);
 
 		};
